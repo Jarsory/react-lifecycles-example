@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Counter from './components/Counter'
+import CounterHooks from './components/CounterHooks'
 
 class App extends Component {
   
@@ -20,7 +21,7 @@ class App extends Component {
         <h2>Clicking this button will destroy the Counter component and clear the state.</h2>
         <button onClick={this.stopCounter}>Stop the counter</button>
 
-        <Counter isRunning={this.state.isRunning} /> 
+        <CounterHooks isRunning={this.state.isRunning} /> 
       </div>
     ) : 'Se ha detenido el contador'
   }
